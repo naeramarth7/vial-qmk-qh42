@@ -22,11 +22,11 @@ Before flashing new firmware, back up the existing `.uf2` from the bootloader dr
 
 Flash left half:
 
-    qmk flash -kb qh/qh42 -km vial-qh42 -bl uf2-split-left
+    qmk flash -kb qhkb/qh42 -km vial -bl uf2-split-left
 
 Flash right half:
 
-    qmk flash -kb qh/qh42 -km vial-qh42 -bl uf2-split-right
+    qmk flash -kb qhkb/qh42 -km vial -bl uf2-split-right
 
 If auto-copy to the UF2 drive fails, manually copy the `.uf2` file from `.build/` to the mounted bootloader drive.
 
