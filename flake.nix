@@ -42,6 +42,11 @@
             pkgs.unstable.qmk
             pkgs.unstable.vial
           ];
+
+          shellHook = ''
+            alias flash-left='qmk flash -kb qhkb/qh42 -km vial -bl uf2-split-left'
+            alias flash-right='qmk flash -kb qhkb/qh42 -km vial -bl uf2-split-right'
+          '';
         };
       }
     );
